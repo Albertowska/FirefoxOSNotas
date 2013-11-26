@@ -1,3 +1,4 @@
+-- Recuerda crear una base de datos y configurar la conexion en Notas/PHP/conexion.php
 -- phpMyAdmin SQL Dump
 -- version 3.5.2.2
 -- http://www.phpmyadmin.net
@@ -7,7 +8,6 @@
 -- Versión del servidor: 5.5.25
 -- Versión de PHP: 5.4.7
 
--- Recuerda configurar la conexion en Notas/PHP/conexion.php
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,12 +17,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
-
---
--- Base de datos: `pruebasphp`
---
-
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `notas`
