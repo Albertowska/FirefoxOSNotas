@@ -7,6 +7,8 @@
 -- Versión del servidor: 5.5.25
 -- Versión de PHP: 5.4.7
 
+-- Recuerda configurar la conexion en Notas/PHP/conexion.php
+
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
