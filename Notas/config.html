@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Configuración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="Styles/estilosConfig.css" rel="stylesheet">
+	<link href="Styles/msgBoxLight.css" rel="stylesheet">
+    <script src="Scripts/jquery.js"></script>
+	<script src="Scripts/jquery.msgBox.js"></script>
+  </head>
+  <body>
+  
+	<div id="nav" class="navbar">
+	  <div class="navbar-inner">
+		<ul class="nav" style="width:100%;">
+		  <li style="width:10%;"><a id="back" href="javascript:history.go(-1)" style="text-align: center;" title="Volver"><i class="icon-step-backward"></i></a></li>
+		  <li class="divider-vertical" style="float:left;"></li>
+		  <li style="width:85%;"><div id="configuracion"><i class="icon-wrench"></i> Configuración</div></li>
+		</ul>
+	  </div>
+	</div>
+
+	<div id="informacion" style="text-align: center; display: none;">
+		<h5 id="usuario"></h5>
+		<button id="cambiar" type="button" class="btn">Cambiar Contraseña</button>
+        <button id="cerrar" type="submit" class="btn">Cerrar Sesión</button>
+	</div>
+
+	<form id="cambiarContraseña" class="form-horizontal" style="display: none;" action="PHP/changePassword.php" method="POST">
+		<div class="control-group" id="oldPasswordGroup">
+			<label class="control-label" for="oldPassword">Contraseña Actual</label>
+	        <div class="controls">
+	        	<input class="long" type="password" id="oldPassword" placeholder="Old Password" name="oldPassword" required>
+	        </div>
+	    </div>
+	    <div class="control-group" id="passwordGroup">
+	    	<label class="control-label" for="newPassword">New Password</label>
+	        <div class="controls">
+	        	<input class="long" type="password" id="newPassword" placeholder="New Password" name="newPassword" required>
+	        </div>
+	    </div>
+	    <div class="control-group" id="repeatPasswordGroup">
+	    	<label class="control-label" id="labelRepeatPassword" for="repeatPassword">Repeat Password</label>
+	        <div class="controls">
+	        	<input class="long" type="password" id="repeatPassword" placeholder="Repeat Password" name="repeatPassword" required>
+	        </div>
+	    </div>
+	    <div class="control-group">
+	    	<div class="controls" id="botonGuardar">
+	        	<button id="register" type="submit" class="btn" align="center">Guardar Cambios</button>
+	   		</div>
+		</div>
+	</div>
+
+	<script src="Scripts/config.js"></script>
+  </body>
+</html>

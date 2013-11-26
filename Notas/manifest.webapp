@@ -1,0 +1,20 @@
+{
+    "version": "1",
+    "name": "Firefox OS Mis Notas",
+    "launch_path": "index.html",
+    "description": "Notas con imagenes",
+    "icons": {
+        "128": "/logo128.png"
+    },
+    "developer": {
+        "name": "Alberto Martin",
+        "url": "http://talentumzaragoza.wordpress.com"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "es",
+    "permissions": {
+        "desktop-notification": {
+            "description" : "To show notifications"
+        }
+    }
+}

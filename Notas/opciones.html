@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Almacén de Notas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="Styles/estilos.css" rel="stylesheet">
+	<link href="Styles/msgBoxLight.css" rel="stylesheet">
+    <script src="Scripts/jquery.js"></script>
+    <script src="bootstrap/js/bootbox.min.js"></script>
+	<script src="Scripts/jquery.msgBox.js"></script>
+  </head>
+  <body>
+   
+	<div id="nav" class="navbar">
+	  <div class="navbar-inner">
+		<ul class="nav" style="width:100%;">
+		  <li style="width:65%;"><a id="nuevaNota" href="nuevaNota.html" title="Volver"><i class="icon-plus-sign main-icon"></i> Menú Opciones</a></li>
+		  <li style="width:15%; float:right;"><a id="configuracion" href="#" style="text-align: center;"><i class="icon-wrench"></i></a></li>
+		  <li class="divider-vertical" style="float:right;"></li>
+		  <li style="width:15%; float:right"><a id="buscar" href="#" style="text-align: center;" title="Buscar"><i class="icon-search"></i></a></li>
+		  <li class="divider-vertical" style="float:right;"></li>
+		</ul>
+	  </div>
+	</div>
+
+	<!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+    <div id="online-status" title="Online"></div>
+	<form role="dialog" data-type="confirm">
+	  <section>
+		<h1>Cerrar Sesion</h1><!-- this heading is optional -->
+		<p>¿Realmente desea cerrar sesión y salir de la aplicación?</p>
+	  </section>
+	  <menu>
+		<button>Cancelar</button>
+		<button class="danger">Salir</button>
+	  </menu>
+	</form>
+	
+	<!-- <script src="main.js"></script> -->
+	<script src="Scripts/security.js"></script>
+  </body>
+</html>

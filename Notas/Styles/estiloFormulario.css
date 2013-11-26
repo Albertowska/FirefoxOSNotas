@@ -1,0 +1,74 @@
+.form-horizontal .control-label {
+	width: 25%;
+	max-width: 105px;
+}
+
+@media (max-width: 500px){
+	.form-horizontal .controls {
+		margin-left: 27%;
+		width: 70%;
+	}
+}
+
+@media (min-width: 501px){
+	.form-horizontal .controls {
+		margin-left: 135px;
+		width: 70%;
+	}
+}
+
+.checkbox {
+	margin-left:5%; 
+	margin-bottom:10px;
+}
+
+.form-horizontal .controls  .long{
+	width: 90%;
+	max-width: 300px;
+}
+
+.form-horizontal .controls  #registerNow, 
+	.form-horizontal .controls  #register{
+	width: 45%;
+	max-width: 155px;
+	min-width: 110px;
+}
+
+.form-horizontal .controls  #login{
+	width: 40%;
+	max-width: 155px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-horizontal .controls  #register{
+	width: 40%;
+	max-width: 155px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-horizontal .controls  #back{
+	width: 40%;
+	max-width: 155px;
+}
+
+.form-horizontal .controls  #repeatPassword{
+	margin-top: 6px;
+}
+
+.form-horizontal  #labelRepeatPassword{
+	padding-top: 0;
+}
+
+.form-horizontal #passwordGroup{
+	margin-bottom: 14px;
+}
+
+.form-horizontal #repeatPasswordGroup{
+	margin-bottom: 15px;
+}
+
+.registro{
+	display: none;
+}

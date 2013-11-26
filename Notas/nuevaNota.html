@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Crear Nota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="Styles/estilos.css" rel="stylesheet">
+	<link href="Styles/msgBoxLight.css" rel="stylesheet">
+    <script src="Scripts/jquery.js"></script>
+	<script src="Scripts/jquery.msgBox.js"></script>
+  </head>
+  <body>
+  
+  
+	<div id="nav" class="navbar">
+	  <div class="navbar-inner">
+		<ul class="nav" style="width:100%;">
+		  <li style="width:10%;"><a id="back" href="inicio.html" style="text-align: center;" title="Volver"><i class="icon-step-backward"></i></a></li>
+		  <li class="divider-vertical" style="float:left;"></li>
+		  <li style="width:55%;"><a href="#" id="guardarNota"><i class="icon-hdd main-icon" title="Guardar Nota"></i> Guardar Nota</a></li>
+		  <li style="width:15%; float:right;"><a id="configuracion" href="config.html" style="text-align: center;" title="Configuración"><i class="icon-wrench"></i></a></li>
+		  <li class="divider-vertical" style="float:right;"></li>
+		</ul>
+	  </div>
+	</div>
+	
+	<form id="formularioNota" class="form-horizontal" onsubmit="return false">
+		<div class="control-group">
+			<label class="control-label" for="titulo">Título</label>
+			<div class="controls">
+			  <input type="text" id="titulo" name="titulo" placeholder="Título de Nota" required maxlength="45">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="contenido">Contenido</label>
+			<div class="controls">
+			  <textarea rows="3" id="contenido" name="contenido" placeholder="Contenido de la Nota"></textarea>
+			</div>
+		</div>
+		<div id="grupoBotones">
+			<div id="grupoImagen" class="control-group">
+				<label class="control-label" for="imagen">Imagen</label>
+				<div class="controls">
+				  	<button class="btn" id="addimage" type="button">Añadir Imagen <i class="icon-picture"></i></button>
+				  	<div id="imagenContenedor">
+					</div>
+				</div>
+			</div>
+			<div id="grupoUbicacion" class="control-group">
+				<label class="control-label" for="contenido">Ubicación</label>
+				<div class="controls">
+					<button id="ubicacion" type="button" class="btn">Añadir Ubicación <i class="icon-map-marker"></i></button>
+				</div>
+			</div>
+			<input type="file" id="file" name="file" accept="image/*" style="display:none;"/>
+		</div>
+	</form>
+
+	<script src="Scripts/security.js"></script>
+	<script src="Scripts/nuevaNota.js"></script>
+  </body>
+</html>

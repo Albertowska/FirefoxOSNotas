@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Almacén de Notas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache">
+    <!-- Bootstrap 	--> 
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="Styles/estilos.css" rel="stylesheet">
+	<link href="Styles/msgBoxLight.css" rel="stylesheet">
+    <script src="Scripts/jquery.js"></script>
+    <script src="bootstrap/js/bootbox.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="Scripts/jquery.msgBox.js"></script>
+    <link rel="stylesheet" href="Styles/action_menu.css">
+  </head>
+  <body>
+  	<div style="display:block" id="inicio">
+		<div id="nav" class="navbar">
+		  <div class="navbar-inner">
+			<ul class="nav" style="width:100%;">
+			  <li style="width:65%;"><a id="nuevaNota" href="nuevaNota.html" title="Crear nueva nota"><i class="icon-plus-sign main-icon"></i> Nueva Nota</a></li>
+			  <li style="width:15%; float:right;"><a id="configuracion" href="config.html" style="text-align: center;" title="Configuración"><i class="icon-wrench"></i></a></li>
+			  <li class="divider-vertical" style="float:right;"></li>
+			  <li style="width:15%; float:right"><a id="buscar" href="#" style="text-align: center;" title="Buscar"><i class="icon-search"></i></a></li>
+			  <li class="divider-vertical" style="float:right;"></li>
+			</ul>
+		  </div>
+		</div>
+
+		<!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+	    <div id="online-status" title="Online"></div>
+	    <div id="botones">
+	    	<a class="large button blue" id="install">Instalar Aplicación</a>
+	    	<a class="large button blue" id="notificaciones">Activar Notificaciones</a>
+	    </div>
+		
+		<div id="cuerpoNotas" style="display: none;"></div>
+	</div>
+
+	<form id="shareSelect" role="dialog" data-type="action" onsubmit="return false;" style="display:none">
+	    <menu>
+	    <section>
+	        <h1> Compartir con: </h1>
+	        <p style="margin: 0 1.5rem 1rem 1.5rem;"></p>
+	    </section>
+	      <button id="correo"> Correo </button>
+	      <button id="mensajes"> Mensajes </button>
+	      <button id="cancel"> Cancel </button>
+	    </menu>
+  	</form>
+	
+	<script src="Scripts/security.js"></script>
+	<script src="Scripts/inicio.js"></script>
+	<script src="Scripts/main.js"></script>
+
+  </body>
+</html>

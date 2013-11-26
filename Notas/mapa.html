@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocaliza tu Nota</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles/mapa.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="Scripts/jquery.js"></script>
+    <script src="bootstrap/js/bootbox.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="nav" class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav" style="width:100%;">
+          <li style="width:10%;"><a id="back" href="javascript:history.go(-1)" style="text-align: center;" title="Volver"><i class="icon-step-backward"></i></a></li>
+          <li class="divider-vertical" style="float:left;"></li>
+          <li style="width:55%;"><a id="addPosition" href="#"><i class="icon-plus-sign main-icon" title="Agregar Ubcación"></i> Agregar Ubicación</a></li>
+          <li style="width:15%; float:right;"><a id="configuracion" href="config.html" style="text-align: center;" title="Configuración"><i class="icon-wrench"></i></a></li>
+          <li class="divider-vertical" style="float:right;"></li>
+        </ul>
+      </div>
+    </div>
+    <div id="nota-informativa">
+      <a id="cerrar" href="#"><i id="cerrar2" class="icon-remove"></i></a>
+      <p>Seleccione un lugar en el mapa para que se le avise cuando este cerca.</p>
+    </div>
+    <div id="map-canvas"></div>
+    <script src="Scripts/security.js"></script>
+    <script src="Scripts/mapa.js"></script>
+  </body>
+</html>
